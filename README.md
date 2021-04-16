@@ -17,7 +17,7 @@ Client application allows connect to server by ip address and controlled time op
 
 Main windows:
 
-![main windows](\img/mainwindow.png) 
+![main windows](img/mainwindow.png) 
 
 It is demonstration project for exploring some possibilities of python moduls
   
