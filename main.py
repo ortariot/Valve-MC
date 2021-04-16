@@ -106,16 +106,11 @@ class WindowsForms(QtWidgets.QMainWindow, valve_design.Ui_MainWindow, valveModbu
             self.ip_lineEdit.setEnabled(True)
 
 
-
-
-
-
-
 def main():
-    app = QtWidgets.QApplication(sys.argv)  # Новый экземпляр QApplication
-    window = WindowsForms()  # Создаём объект класса ExampleApp
-    window.show()  # Показываем окно
-    app.exec_()  # и запускаем приложение
+    app = QtWidgets.QApplication(sys.argv)  
+    window = WindowsForms()  
+    window.show()  
+    app.exec_() 
 
 
 if __name__ == '__main__':
