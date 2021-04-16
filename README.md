@@ -19,6 +19,6 @@ Main windows:
 
 ![main windows](img/mainwindow.png) 
 
-It is demonstration project for exploring some possibilities of python moduls
+It is demonstration project for exploring some possibilities of python modules
   
 
