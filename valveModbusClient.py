@@ -16,6 +16,7 @@ UNIT = 0x1
 #     client = ModbusClient('localhost', port=5020)
 #     client.connect()
 #     log.debug("Write to a holding register and read back")
+#     rc = client.write_coil(0, True, unit=UNIT)
 #     rq = client.write_register(0, 38, unit=UNIT)
 #     rr = client.read_holding_registers(0, 1, unit=UNIT)
 #     print(rr.registers[0])
@@ -32,8 +33,11 @@ class valve_modbus_client:
     def valve_disconnect(self):
         self.valve_client.close()
 
-    def send_valve_server(self, valve_addres, valve_value):
+    def send_value_valve_server(self, valve_addres, valve_value):
         self.valve_client.write_register(valve_addres, valve_value, unit=UNIT)
+    
+    def send_coil_valve_server(self, valve_addres, bool_value):
+        self.valve_client.write_coil(valve_addres, bool_value, unit=UNIT)
 
     def get_value_server(self, valve_addres):
         self.valve_value = self.valve_client.read_holding_registers(valve_addres, 1, unit=UNIT)
