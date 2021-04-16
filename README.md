@@ -1,4 +1,4 @@
-# Valve monster Comander 
+# Valve monster Client 
 
 **This client pats for system of controlling electro-mechanical valves**
 
