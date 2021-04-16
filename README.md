@@ -15,7 +15,7 @@ Client parts devlopment by Pyton language used modules:
 
 Client application allows connect to server by ip address and controlled time open and close valves.
 
-Main windows:
+Main window:
 
 ![main windows](img/mainwindow.png) 
 
